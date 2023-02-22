@@ -1,1 +1,166 @@
+body{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 221, 176);
+}
+.cool_buttons{
+    display: flex;
+    justify-content: center;
+}
+.btn_basics{
+    font-size: 22px;
+    width: 250px;
+    padding: 10px 20px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0, 0.3);
+}
+.grow_tr{
+    color: #fff;
+    background-color: #0cbaba;
+    background-image: linear-gradient(180deg, #0cbaba 0%, #380036 74%);
+    transition: all .2s linear;
+}
+.grow_tr:hover{
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0, 0.4);
+    transform: scale(1.2);
+}
 
+.shrink_tr{
+    color: #fff;
+    background-color: #20bf55;
+    background-image: linear-gradient(360deg, #20bf55 0%, #01baef 74%);
+    transition: all .2s linear;
+}
+.shrink_tr:hover{
+    box-shadow: 2px 3px 3px 0px rgba(0,0,0, 0.2);
+    transform: scale(0.9);
+}
+
+/* button 3 styles */
+.color_tr{
+    position: relative;
+}
+.color_tr::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0%;
+    height: 100%;
+    border-radius: 20px;
+    opacity: 0;
+    background-color:#861657;
+    background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
+    transition: all .2s ease-out;
+    z-index: 1;
+}
+.color_tr:hover::before{
+    opacity: 1;
+    width:100%
+}
+.btn_text{
+    position: relative;
+    z-index: 2;
+}
+
+/* #button 4 styles*/
+.wave_tr{
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+.wave_tr::before{
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: -10px;
+    height: 0px;
+    width: 0px;
+    background-color: #7ee8fa;
+    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+    border-radius: 50%;
+    transition: all .2s linear;
+}
+.wave_tr:hover::before{
+    height: 300px;
+    width: 300px;
+}
+.btn_text1{
+    position: relative;
+    z-index: 1;
+}
+
+/* fa icons styles */
+/* 1) fb button */
+.btn_container{
+    position: relative;
+}
+.fa_icons{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    margin: 10px;
+    font-size: 27px;
+    z-index: 1;
+}
+
+.fb_icon::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #3b5998;
+    height: 0px;
+    width: 0px;
+    transition: all .3s linear;
+}
+.fb_icon{
+    transition: all .3s linear;
+}
+.fb_icon:hover{
+    cursor: pointer;
+    color: #fff;
+}
+.fb_icon:hover::before{
+    width: 70px;
+    height: 70px;
+}
+.fa_fb{
+    position: relative;
+    z-index: 2;
+}
+
+/* youtube icon */
+.yt_icon{
+    transition: all .3s linear;
+}
+.yt_icon:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #FF0000;
+    transform: rotate(360deg);
+}
+.fa_yt{
+    position: relative;
+    z-index: 2;
+}
+/* twitter icon */
+.tw_icon{
+    transition: all .3s linear;
+}
+.tw_icon:hover{
+    cursor: pointer;
+    background-color: #1DA1F2;
+    color: #fff;
+    transform: skew(-10deg, -10deg)
+}
+.fa_tw{
+    position: relative;
+    z-index: 2;
+}
