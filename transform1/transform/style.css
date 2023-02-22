@@ -1,0 +1,28 @@
+body{
+    background-color: lightblue;
+}
+.container{
+    padding: 10px;
+    background-color: orangered;
+    width: 250px;
+    height: 250px;
+}
+.inner_container{
+    background-color: olivedrab;
+    width: 250px;
+    height: 250px;
+    /* transform: translate(x, y); */
+
+    /* transform: translate(150px, 150px); */
+    
+    /* x-axis only 
+    transform: translate(200px); */
+    /* transform: translate(-200px); */
+    /* y-axis only */
+    transform: translate(0px, -200px);
+    /* shorthand syntax
+     transform: translateY();
+     transform: translateX */
+    transform: translateY(-200px);
+
+}
