@@ -1,1 +1,29 @@
+body{
+    background-color: beige;
+}
 
+/* Transintion property
+
+1) Property name
+2) Duration
+3) timing function
+4) delay */
+.trans_container{
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    border-radius: 50%;
+    /* transition: background-color 2s; */
+    transition: all 2s;
+    /* 
+    transition-property: all;
+    transition-duration: 2s; 
+    */
+
+}
+.trans_container:hover{
+    cursor: pointer;
+    height: 350px;
+    width: 350px;
+    background-color: blueviolet;
+}
