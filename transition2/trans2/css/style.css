@@ -1,1 +1,54 @@
+body{
+    background-color: beige;
+}
 
+/* Transintion property
+
+1) Property name
+2) Duration
+3) timing function (ease, ease-in, ease-out, ease-in-out, linear, step-start, step-end
+4) delay 
+*/
+.trans_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 50%;
+    /* transition: all 1s; */
+    transition: all 1s ease-in-out;
+    margin: 10px;
+}
+.parent_container:hover .trans_container{
+    cursor: pointer;
+    margin-left: 400px;
+    background-color: greenyellow;
+/* }
+.ease{
+    transition-timing-function: ease;
+}
+.ease-in{
+    transition-timing-function: ease-in;
+}
+.ease-out{
+    transition-timing-function: ease-out;
+}
+.ease-in-out{
+    transition-timing-function: ease-in-out;
+}
+.linear{
+    transition-timing-function: linear;
+}
+.step-start{
+    transition-timing-function: step-start;
+}
+.step-end{
+    transition-timing-function: step-end;
+}
+.cb{
+    transition-timing-function: cubic-bezier(.33,.41,1,-0.2);
+} */
