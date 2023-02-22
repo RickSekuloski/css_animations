@@ -1,1 +1,30 @@
+body{
+    background-color: beige;
+}
 
+/* Transintion property
+
+1) Property name
+2) Duration
+3) timing function (ease, ease-in, ease-out, ease-in-out, linear, step-start, step-end
+4) delay 
+*/
+.trans_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 50%;
+    /* transition: all 1s; */
+    transition: all 1s ease-in-out 2s;
+    margin: 10px;
+}
+.parent_container:hover .trans_container{
+    cursor: pointer;
+    margin-left: 400px;
+    background-color: greenyellow;
+}
