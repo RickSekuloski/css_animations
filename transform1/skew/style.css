@@ -1,0 +1,16 @@
+body{
+    background-color: azure;
+}
+.container{
+    width: 250px;
+    height: 250px;
+    border: 3px solid brown;
+}
+.inner_container{
+    width: 250px;
+    height: 250px;
+    border: 3px solid seagreen;
+    transform: skew(10deg, 20deg);
+    transform: skewX(-10deg);
+    transform: skewY(-10deg);
+}
