@@ -1,1 +1,44 @@
+body{
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 20px;
+    color:#000;
+}
 
+.image_container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image{
+    height: 350px;
+    width: 350px;
+}
+figure{
+    background-color: #fff;
+    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.6);
+    border: solid 12px #fff;
+    position: relative;
+    top: 200px;
+    transition: all 1s ease;
+    text-align: center;
+}
+figure:nth-child(1){
+    transform: rotate(10deg);
+}
+figure:nth-child(2){
+    transform: rotate(-10deg);
+}
+figure:nth-child(3){
+    transform: rotate(-39deg);
+}
+figure:nth-child(4){
+    transform: rotate(20deg);
+}
+figure:hover{
+    cursor: pointer;
+    opacity: 0.1;
+    top: 0px;
+}
+.image_caption{
+    font-size: 24px;
+}
