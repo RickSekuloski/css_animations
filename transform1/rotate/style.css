@@ -1,0 +1,18 @@
+body{
+    background-color: azure;
+}
+.container{
+    width: 300px;
+    height: 300px;
+    border: 3px solid brown;
+}
+.inner_container{
+    width: 300px;
+    height: 300px;
+    border: 3px solid seagreen;
+    /* clockwise turn postive angles*/
+    transform: rotate(150deg);
+    transform: rotate(-100deg);
+    /* gradients */
+    transform: rotate(400grad);
+}
