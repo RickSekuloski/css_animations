@@ -1,1 +1,31 @@
-
+body{
+    background-color: beige;
+}
+.perspective{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 400px;
+    width: 400px;
+    border: 3px solid orangered;
+    perspective:400px;
+    /* perspective-origin: top; */
+    /* perspective-origin: left;
+    perspective-origin: right;
+    perspective-origin: bottom; */
+    /* perspective-origin: 50% 50%; */
+    /* perspective-origin: bottom right; */
+}
+.square{
+    height: 100%;
+    background-color: blue;
+    /* transform: translateX(50px); */
+    /* transform: translateY(50px); */
+    /* transform: perspective(400px) translateZ(-100px); */
+    /* this needs to be set in the parent */
+    /* perspective:400px; */
+    transform:translateZ(-100px);
+    /* transform: translate3d(0px, 0px, -100px); */
+}
