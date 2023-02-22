@@ -1,1 +1,128 @@
+body{
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.links{
+    /* background-color: #fff; */
+    margin: 20px;
+    position: relative;
+}
+.basic_reset{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.products_link::after{
+    content: '';
+    display: block;
+    background-color: goldenrod;
+    height: 0px;
+    width: 100%;
+    border-radius: 2px;
+    margin-top: 2px;
+    opacity: 0;
+    transition: all .2s ease-in;
+}
+.products_link:hover::after{
+    opacity: 1;
+    height: 3px;
+}
+/* # second link (loading) */
+.products_link1::after{
+    content: '';
+    display: block;
+    background-color: blue;
+    height: 3px;
+    width: 0%;
+    border-radius: 2px;
+    margin-top: 2px;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+.products_link1:hover::after{
+    opacity: 1;
+    width: 100%;
+}
+/* link 3 */
+.products_link2::after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: -10%;
+    height: 3px;
+    /* width:100%; */
+    background-color: rgb(75, 75, 242);
+    border-radius: 2px;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: all 0.5s linear;
+}
 
+.products_link2:hover::after{
+    opacity: 1;
+    transform: scaleX(1);
+}
+/* link 4 */
+
+.products_link3::after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: -20%;
+    height: 3px;
+    width:100%; 
+    background-color: rgb(27, 181, 27);
+    border-radius: 2px;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: all 0.5s linear;
+}
+.products_link3::before{
+    content: '';
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: -20%;
+    height: 3px;
+    width:100%; 
+    background-color: rgb(27, 181, 27);
+    border-radius: 2px;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: all 0.5s linear;
+}
+.products_link3:hover::after{
+    opacity: 1;
+    transform: scaleX(1);
+}
+.products_link3:hover::before{
+    opacity: 1;
+    transform: scaleX(1);
+}
+/* #link 4 */
+.original_desc{
+    transition: all .2s linear;
+}
+.products_link4::after{
+    content: attr(data-text);
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: -100%;
+    opacity: 0;
+    text-align: center;
+    transition: all .2s linear;
+}
+.products_link4:hover .original_desc{
+    opacity: 0;
+}
+.products_link4:hover::after{
+    opacity: 1;
+    transform: translateY(-100%);
+}
